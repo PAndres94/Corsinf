@@ -1,0 +1,99 @@
+/* Variables CSS */
+:root {
+    --color-principal: #ff6600;
+    --color-fondo: #fff;
+    --color-sombra: rgba(0, 0, 0, 0.1);
+    --fuente-familia: Arial, sans-serif;
+    --color-borde: #ddd;
+}
+
+/* Estilos generales */
+body {
+    font-family: var(--fuente-familia);
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-fondo);
+    padding: 10px 20px;
+}
+
+header img {
+    height: 100px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    gap: 60px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0a08a7;
+}
+
+/* Sección Hero */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, rgba(255, 165, 0, 0.3), rgba(255, 255, 255, 0.5));
+}
+
+.hero h1 {
+    font-size: 45px;
+    color: var(--color-principal);
+}
+
+/* Contenedor de imagen y texto */
+.image-container h3 {
+    font-size: 30px;
+    color: var(--color-principal);
+}
+
+.image-container h2 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Filtros */
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Tarjetas */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--color-fondo);
+    border: 1px solid var(--color-borde);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 10px;
+}
