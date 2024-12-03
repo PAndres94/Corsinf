@@ -73,7 +73,7 @@ nav a {
 .filters {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 0px;
     max-width: 1300px;
     margin: 0 auto; /* Centra el contenedor en la página */
     justify-content: center; /* Centra los elementos dentro del contenedor */
@@ -90,6 +90,7 @@ nav a {
 
 .filter-box h3 {
     margin-bottom: 10px;
+    font-size: 2em; /* Aumenta el tamaño de la letra del título */
 }
 
 .filter-box:nth-child(1) {
@@ -100,7 +101,7 @@ nav a {
 .filter-box select {
     width: 100%;
     padding: 10px;
-    border: 1px solid #d85407; 
+    border: 1px solid #ff6600; 
     border-radius: 4px;
     max-width: 1300px;
 }
@@ -174,5 +175,198 @@ nav a {
     100% {
         opacity: 1;
         transform: translateY(0); /* Termina en su lugar original */
+    }
+}
+
+/* Estilos generales para el pie de página */
+#imFooter {
+    background-color: #3c0061; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px;
+    position: relative;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden de manera flexible */
+    justify-content: space-between; /* Distribuye el contenido de manera equitativa */
+}
+
+.footer-section {
+    text-align: start; /* Centra el texto dentro de cada sección */
+    margin: 10px;
+    flex: 1 1 200px; /* Hace que las secciones sean flexibles pero no se expandan indefinidamente */
+    font-size:1.3rem;
+}
+
+.footer-section h4 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: orange; /* Color de los enlaces */
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+.social-icons {
+    display: flex;
+    gap: 25px; /* Espacio entre los iconos */
+}
+
+.social-icon {
+    color: orange; /* Color de los iconos */
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #ff6600; /* Cambiar color al pasar el mouse */
+}
+
+/* Estilo para el botón de scroll hacia arriba */
+.scroll-up {
+    position: fixed;
+    bottom: 20px; /* Lo mantiene al fondo de la página */
+    right: 20px; /* Lo alinea a la derecha */
+    background-color: #ff6600; /* Fondo amarillo */
+    color: #3c0061; /* Color de texto */
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none; /* Inicialmente oculto */
+    transition: background-color 0.3s;
+}
+
+.scroll-up:hover {
+    background-color: #ff6600; /* Cambiar fondo al pasar el mouse */
+}
+
+/* Medios de pantalla (responsive design) */
+@media (max-width: 768px) {
+    /* Estilo para las secciones del pie de página */
+    .footer-section {
+        flex: 1 100%; /* En pantallas pequeñas, cada sección ocupa el 100% */
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    /* Estilo para los íconos de redes sociales */
+    .social-icons {
+        display: flex;
+        justify-content: center; /* Centrar los íconos */
+        align-items: center;
+        color: #FF6600; /* El color que deseas para los íconos */
+        font-size: 24px; /* Tamaño de los íconos */
+        transition: color 0.3s ease; /* Transición suave para el color */
+    }
+
+    /* Estilo específico para cada ícono de red social */
+    .social-icon i {
+        font-size: 1.5rem; /* Tamaño de los íconos */
+        margin: 0 10px; /* Espaciado entre los íconos */
+        color: #FF6600; /* Color de los íconos */
+        transition: color 0.3s ease; /* Efecto al pasar el ratón */
+    }
+
+    /* Efecto hover para los íconos de redes sociales */
+    .social-icon i:hover {
+        color: #e65c00; /* Color al pasar el ratón sobre los íconos */
+    }
+
+    /* Estilo para el botón de desplazamiento hacia arriba */
+    .scroll-up {
+        font-size: 1.3rem; /* Tamaño del botón de desplazamiento */
+        bottom: 15px;
+        right: 15px;
+        position: fixed; /* El botón se queda fijo en la pantalla */
+        z-index: 1000; /* Asegura que esté encima de otros elementos */
+        background-color: #FF6600; /* Color de fondo del botón */
+        color: white; /* Color del texto en el botón */
+        padding: 10px; /* Relleno alrededor del texto */
+        border-radius: 50%; /* Forma circular del botón */
+        cursor: pointer; /* Cambia el cursor a mano cuando pases sobre el botón */
+        transition: background-color 0.3s ease; /* Efecto de transición */
+    }
+
+    /* Efecto hover para el botón de desplazamiento */
+    .scroll-up:hover {
+        background-color: #e65c00; /* Cambio de color en hover */
+    }
+}
+
+h1 {
+    color: #045a94; /* Azul */
+    font-size: 50px;
+}
+
+hr.separator {
+    border: none; /* Elimina el borde por defecto */
+    height: 2px; /* Ajusta el grosor del separador */
+    background-color: #ffffff; /* Color personalizado del separador */
+    margin: 20px auto; /* Espaciado alrededor del separador */
+    width: 80%; /* Ajusta el ancho del separador */
+}
+
+.info-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    color: #045a94;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    text-align: center; /* Centra el contenido de texto dentro del contenedor */
+}
+
+.info-container p {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 25px;
+    line-height: 1.6;
+    animation: scrollUp 25s ease-in-out infinite;
+    opacity: 1;
+}
+
+/* Detener la animación cuando el mouse está encima */
+.info-container p:hover {
+    animation-play-state: paused; /* Pausa la animación */
+}
+
+.text-block {
+    display: block; /* Cada bloque de texto se coloca en una línea separada */
+    margin-bottom: 35px; /* Espacio entre bloques */
+}
+
+p {
+    max-width: 2000px; /* Puedes ajustar este valor según el espacio que desees para las frases */
+    line-height: 2.5;
+    word-wrap: break-word;
+    text-align: justify; /* Ajusta el texto a las líneas */
+}
+
+@keyframes scrollUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0; /* Empieza completamente invisible */
+    }
+    20% {
+        opacity: 1; /* Aparece lentamente al subir */
+    }
+    50% {
+        transform: translateY(0); /* Llegando a su posición original */
+        opacity: 1; /* Mantiene la opacidad máxima mientras está en posición central */
+    }
+    80% {
+        opacity: 0; /* Se desvanece al llegar a la parte superior */
+    }
+    100% {
+        transform: translateY(-100%); /* Se mueve completamente fuera de la vista */
+        opacity: 0; /* Se desvanece completamente */
     }
 }
