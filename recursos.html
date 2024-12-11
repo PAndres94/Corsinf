@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentos Legales Normativos</title>
+    <link rel="stylesheet" href="recursos.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav>
+        <img src="https://www.fedepal.ec/wp-content/uploads/2020/02/cropped-logosmall.png" alt="Logo FEDEPAL">
+        <div class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="afiliacion.html">Afiliación</a>
+            <a href="capacitacion.html">Capacitación</a>
+            <a href="contacto.html">Contactos</a>
+            <a href="recursos.html">Recursos</a>
+        </div>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="header">
+        <h1>Documentos Legales Normativos</h1>
+    </header>
+
+    <!-- Contenido -->
+    <main>
+        <section class="documentos">
+            <h2>Seleccione la categoría</h2>
+            <ul>
+                <li>
+                    <button onclick="toggle('acuerdos_ministeriales')">Acuerdos Ministeriales</button>
+                    <ul id="acuerdos_ministeriales" class="hidden">
+                        <!-- Lista de documentos en la carpeta "Acuerdos Ministeriales" -->
+                        <li><a href="DOCUMENTOS_LEGALES_NORMATIVOS/ACUERDOS_MINISTERIALES/Actualización del Cronograma Escolar Costa-Galápagos año lectivo 2024-2025 para las instituciones educativas de sostenimiento fiscal/20240424 MINEDUC-MINEDUC-2024-00160-M.pdf" target="_blank">MinEdu</a></li>
+                        <li><a href="DOCUMENTOS_LEGALES_NORMATIVOS/ACUERDOS_MINISTERIALES/documento2.pdf" target="_blank">Documento 2</a></li>
+                        <li><a href="DOCUMENTOS_LEGALES_NORMATIVOS/ACUERDOS_MINISTERIALES/documento3.pdf" target="_blank">Documento 3</a></li>
+                    </ul>
+                </li>
+                    <button onclick="toggle('resoluciones')">Resoluciones</button>
+                    <ul id="resoluciones" class="hidden">
+                        <li><a href="DOCUMENTOS_LEGALES_NORMATIVOS/RESOLUCIONES/documento1.pdf" target="_blank">Documento 1</a></li>
+                        <li><a href="DOCUMENTOS_LEGALES_NORMATIVOS/RESOLUCIONES/documento2.pdf" target="_blank">Documento 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button onclick="toggle('lineamientos')">Lineamientos</button>
+                    <ul id="lineamientos" class="hidden">
+                        <li><a href="DOCUMENTOS_LEGALES_NORMATIVOS/LINEAMIENTOS/documento1.pdf" target="_blank">Documento 1</a></li>
+                        <li><a href="DOCUMENTOS_LEGALES_NORMATIVOS/LINEAMIENTOS/documento2.pdf" target="_blank">Documento 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email: contacto@empresa.com</p>
+                <p>Teléfono: +593 999 999 999</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Función para alternar la visibilidad de las listas de documentos
+        function toggle(id) {
+            const element = document.getElementById(id);
+            // Si el elemento tiene la clase "hidden", la quitamos para mostrarlo
+            if (element.classList.contains('hidden')) {
+                element.classList.remove('hidden');
+            } else {
+                // Si no tiene la clase "hidden", la agregamos para ocultarlo
+                element.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>

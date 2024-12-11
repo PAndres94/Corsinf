@@ -1,0 +1,149 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navegación */
+nav {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav img {
+    height: 50px;
+}
+
+nav .menu {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #004f9e;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ff7f00;
+    color: white;
+}
+
+nav a.active {
+    background-color: #004f9e;
+    color: white;
+}
+
+/* Encabezado */
+.header {
+    background-color: #4B0082;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Documentos */
+.documentos {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.documentos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.documentos li {
+    margin: 10px 0;
+}
+
+.documentos button {
+    background-color: #004f9e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.documentos button:hover {
+    background-color: #ff7f00;
+}
+
+.documentos .hidden {
+    display: none;
+}
+
+.documentos a {
+    color: #004f9e;
+    text-decoration: none;
+}
+
+.documentos a:hover {
+    text-decoration: underline;
+}
+
+/* Pie de página */
+.footer {
+    background-color: #4B0082;
+    color: white;
+    padding: 20px;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-top: 0;
+    font-family: 'Georgia', serif;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section p {
+    font-family: 'Georgia', serif;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffcc00;
+}
+
+/* Esta clase ocultará los elementos por defecto */
+.hidden {
+    display: none;
+}
