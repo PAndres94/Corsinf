@@ -3,269 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FEDEPAL - Federación de Establecimientos de Educación Particular Laica">
     <title>FEDEPAL</title>
     <link rel="stylesheet" href="index.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #f9f9f9;
-            line-height: 1.6;
-        }
-
-        nav {
-            background-color: white;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        nav img {
-            height: 50px;
-        }
-
-        nav .menu {
-            display: flex;
-            gap: 20px;
-        }
-
-        nav a {
-            color: #004f9e;
-            text-decoration: none;
-            font-size: 1.1em;
-            font-weight: bold;
-            padding: 8px 15px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        nav a:hover {
-            background-color: #ff7f00;
-            color: white;
-        }
-
-        header {
-            position: relative;
-            text-align: center;
-            color: white;
-        }
-
-        header img {
-            width: 100%;
-            height: 50vh;
-            object-fit: cover;
-        }
-
-        header .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.4);
-        }
-
-        header .content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 10;
-        }
-
-        header h1 {
-            font-size: 2.5em;
-            color: #ff7f00;
-        }
-
-        header p {
-            font-size: 1.2em;
-        }
-
-        header .button {
-            background-color: #ff7f00;
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-
-        header .button:hover {
-            background-color: #cc6600;
-        }
-
-        section {
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        #constitucion {
-            background-color: #f8f8f8;
-        }
-
-        #constitucion h2 {
-            color: #ff7f00;
-            font-size: 2em;
-        }
-
-        #constitucion p {
-            color: #333;
-            text-align: justify;
-            max-width: 800px;
-            margin: auto;
-        }
-
-        #directorio {
-            background-color: #2f3e58;
-            color: white;
-            padding: 40px 20px;
-        }
-
-        #directorio h2 {
-            color: #ff7f00;
-            font-size: 2em;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .card {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            text-align: center;
-            width: 200px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .card img {
-            width: 100%;
-            border-radius: 8px 8px 0 0;
-            height: 250px;
-            object-fit: cover;
-        }
-
-        .card h3 {
-            margin: 10px 0 5px;
-            font-size: 18px;
-            color: #333;
-        }
-
-        .card p {
-            margin: 0;
-            font-size: 16px;
-            color: #666;
-        }
-
-        .card .role {
-            background-color: #ff7f00;
-            color: #fff;
-            font-size: 14px;
-            font-weight: bold;
-            padding: 5px;
-            border-radius: 0 0 8px 8px;
-        }
-
-         /* Estilos para las estadísticas */
-         .stats-container {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            padding: 20px;
-            background-color: #ffffff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 20px 0;
-        }
-        .stat-box {
-            text-align: center;
-        }
-        .stat-box i {
-            font-size: 50px;
-            color: #4B0082; /* Color púrpura oscuro */
-        }
-        .stat-number {
-            font-size: 24px;
-            font-weight: bold;
-            color: #4B0082; /* Color púrpura oscuro */
-        }
-        .stat-text {
-            font-size: 16px;
-            color: #333333;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            background-color: #f9f9f9;
-        }
-        .footer {
-            background-color: #4B0082; /* Color de fondo púrpura oscuro */
-            color: white;
-            padding: 20px;
-            margin-top: auto;
-        }
-        .footer-container {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        .footer-section {
-            flex: 1;
-            min-width: 150px;
-            margin: 10px;
-        }
-        .footer-section h3 {
-            margin-top: 0;
-            font-family: 'Georgia', serif; /* Fuente con estilo */
-        }
-        .footer-section a {
-            color: white;
-            text-decoration: none;
-            font-family: 'Georgia', serif; /* Fuente con estilo */
-        }
-        .footer-section p {
-            font-family: 'Georgia', serif; /* Fuente con estilo */
-        }
-        .social-icons {
-            display: flex;
-            gap: 15px;
-            margin-top: 20px;
-        }
-        .social-icons a {
-            color: white;
-            font-size: 20px; /* Tamaño uniforme para los íconos */
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        .social-icons a:hover {
-            color: #ffcc00; /* Cambia el color al pasar el mouse */
-        }
-    </style>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <!-- Barra de navegación -->
     <nav>
-        <img src="https://www.fedepal.ec/wp-content/uploads/2020/02/cropped-logosmall.png" alt="Logo FEDEPAL">
+        <img src="https://www.fedepal.ec/wp-content/uploads/2020/02/cropped-logosmall.png" alt="Logo FEDEPAL" loading="lazy">
         <div class="menu">
             <a href="index.html">Inicio</a>
             <a href="afiliacion.html">Afiliación</a>
@@ -277,7 +23,7 @@
 
     <!-- Imagen de cabecera -->
     <header id="inicio">
-        <img src="https://th.bing.com/th/id/OIP.BbbbhBKWeVa6qDZ5xmRC5gHaFs?rs=1&amp;pid=ImgDetMain" alt="Biblioteca">
+        <img src="https://th.bing.com/th/id/OIP.BbbbhBKWeVa6qDZ5xmRC5gHaFs?rs=1&amp;pid=ImgDetMain" alt="Biblioteca FEDEPAL" loading="lazy">
         <div class="overlay"></div>
         <div class="content">
             <h1>FEDEPAL</h1>
@@ -297,25 +43,25 @@
         <!-- Primera fila -->
         <div class="row">
             <div class="card">
-                <img src="https://site.fedepal.ec/images/1726563945255.jpg" alt="Martha Chávez">
+                <img src="https://site.fedepal.ec/images/1726563945255.jpg" alt="Martha Chávez" loading="lazy">
                 <h3>Martha Chávez</h3>
                 <p>Presidenta</p>
                 <div class="role">Presidenta</div>
             </div>
             <div class="card">
-                <img src="Karen.jpg" alt="Karen Mejía">
+                <img src="Karen.jpg" alt="Karen Mejía" loading="lazy">
                 <h3>Karen Mejía</h3>
                 <p>Vicepresidenta</p>
                 <div class="role">Vicepresidenta</div>
             </div>
             <div class="card">
-                <img src="https://site.fedepal.ec/images/Gabriela-Giraldo.jpg" alt="Gabriela Giraldo">
+                <img src="https://site.fedepal.ec/images/Gabriela-Giraldo.jpg" alt="Gabriela Giraldo" loading="lazy">
                 <h3>Gabriela Giraldo</h3>
                 <p>Secretaria</p>
                 <div class="role">Secretaria</div>
             </div>
             <div class="card">
-                <img src="https://site.fedepal.ec/images/Jenny.jpg" alt="Jenny Vinueza">
+                <img src="https://site.fedepal.ec/images/Jenny.jpg" alt="Jenny Vinueza" loading="lazy">
                 <h3>Jenny Vinueza</h3>
                 <p>Tesorera</p>
                 <div class="role">Tesorera</div>
@@ -324,25 +70,25 @@
         <!-- Segunda fila -->
         <div class="row">
             <div class="card">
-                <img src="https://site.fedepal.ec/images/1728917512576.jpg" alt="Carlos Pérez">
+                <img src="https://site.fedepal.ec/images/1728917512576.jpg" alt="Carlos Pérez" loading="lazy">
                 <h3>Carlos Pérez</h3>
                 <p>1° Vocal Principal</p>
                 <div class="role">1° Vocal Principal</div>
             </div>
             <div class="card">
-                <img src="https://site.fedepal.ec/images/1728947199867.jpg" alt="Nancy Torres">
+                <img src="https://site.fedepal.ec/images/1728947199867.jpg" alt="Nancy Torres" loading="lazy">
                 <h3>Nancy Torres</h3>
                 <p>2° Vocal Principal</p>
                 <div class="role">2° Vocal Principal</div>
             </div>
             <div class="card">
-                <img src="https://site.fedepal.ec/images/1726563945312.jpg" alt="Giovanny Romero">
+                <img src="https://site.fedepal.ec/images/1726563945312.jpg" alt="Giovanny Romero" loading="lazy">
                 <h3>Giovanny Romero</h3>
                 <p>3° Vocal Principal</p>
                 <div class="role">3° Vocal Principal</div>
             </div>
             <div class="card">
-                <img src="https://site.fedepal.ec/images/1728917512616.jpg" alt="Adrián Mader">
+                <img src="https://site.fedepal.ec/images/1728917512616.jpg" alt="Adrián Mader" loading="lazy">
                 <h3>Adrián Mader</h3>
                 <p>1° Vocal Suplente</p>
                 <div class="role">1° Vocal Suplente</div>
@@ -351,13 +97,13 @@
         <!-- Tercera fila -->
         <div class="row">
             <div class="card">
-                <img src="https://site.fedepal.ec/images/1728917512654.jpg" alt="Elizabeth Guerrero">
+                <img src="https://site.fedepal.ec/images/1728917512654.jpg" alt="Elizabeth Guerrero" loading="lazy">
                 <h3>Elizabeth Guerrero</h3>
                 <p>2° Vocal Suplente</p>
                 <div class="role">2° Vocal Suplente</div>
             </div>
             <div class="card">
-                <img src="https://site.fedepal.ec/images/1726563945370.jpg" alt="Carolina Erazo">
+                <img src="https://site.fedepal.ec/images/1726563945370.jpg" alt="Carolina Erazo" loading="lazy">
                 <h3>Carolina Erazo</h3>
                 <p>3° Vocal Suplente</p>
                 <div class="role">3° Vocal Suplente</div>
@@ -365,8 +111,8 @@
         </div>
     </div>
 
-     <!-- Sección Estadísticas -->
-     <div class="stats-container">
+    <!-- Sección Estadísticas -->
+    <div class="stats-container">
         <div class="stat-box">
             <i class="fas fa-trophy"></i>
             <div class="stat-number">10,000+</div>
@@ -384,33 +130,33 @@
         </div>
     </div>
 
-    <!-- Contenido principal de la página -->
-
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-section">
-            <h3>Servicios</h3>
-            <ul>
-                <li><a href="convenios.html">Convenios</a></li>
-                <li><a href="socios.html">Portal de Socios</a></li>
-                <li><a href="https://www.webmail.com">Webmail</a></li>
-            </ul>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Servicios</h3>
+                <ul>
+                    <li><a href="convenios.html">Convenios</a></li>
+                    <li><a href="socios.html">Portal de Socios</a></li>
+                    <li><a href="https://www.webmail.com">Webmail</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contactos</h3>
+                <p><a href="tel:+5932248914">Tel: +593-2248914</a></p>
+                <p><a href="tel:+593999247290">Tel: +593 9 9924 7290</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Dirección</h3>
+                <p><a href="https://www.google.com/maps?q=República+del+Salvador+525+e+Irlanda" target="_blank">
+                    República del Salvador 525 e Irlanda</a>
+                </p>
+            </div>
         </div>
-        <div class="footer-section">
-            <h3>Contactos</h3>
-            <p><a href="tel:+5932248914">Tel: +593-2248914</a></p>
-            <p><a href="tel:+593999247290">Tel: +593 9 9924 7290</a></p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
-        <div class="footer-section">
-            <h3>Dirección</h3>
-            <p><a href="https://www.google.com/maps?q=República+del+Salvador+525+e+Irlanda" target="_blank">
-                República del Salvador 525 e Irlanda</a>
-            </p>
-        </div>
-    </div>
-    <div class="social-icons">
-        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-    </div>
-</footer>
+    </footer>
+</body>
+</html>
