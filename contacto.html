@@ -28,8 +28,8 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .contact-header {
-            background-color: #6a1b9a; /* Color morado */
-            color: rgb(255, 255, 255);
+            color: #ff6600;
+            background-color: #4B0082; /* Color morado */
             padding: 30px;
             text-align: center;
               }
@@ -77,7 +77,7 @@
             border-radius: 8px;
         }
         .form-container button {
-            background-color: #4CAF50;
+            background-color: #ff6600;
             color: white;
             border: none;
             padding: 12px 20px;
@@ -85,9 +85,7 @@
             font-size: 1.1rem;
             cursor: pointer;
         }
-        .form-container button:hover {
-            background-color: #004d99;
-        }
+
         .contact-info-text {
             text-align: center;
             font-size: 1.2rem;
@@ -98,7 +96,7 @@
             margin: 5px 0;
         }
         .phone-number {
-            background-color: #4CAF50;
+            background-color: #ff6600;
             color: white;
             padding: 10px;
             border-radius: 5px;
@@ -144,7 +142,7 @@ nav a {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 nav a:hover {
-    background-color: #ff7f00;
+    background-color: #ff6600;
     color: white;
 }
 
@@ -176,10 +174,21 @@ header .content {
 }
 header h1 {
     font-size: 2.5em;
-    color: #ff7f00;
+    color: #ff6600;
 }
 header p {
     font-size: 1.2em;
+}
+.contact-header h2{
+            font-size: 4rem;
+            margin: 0;
+            font-weight: bold;
+            text-transform: uppercase;
+}
+.contact-header p{
+    font-size: 1.2rem;
+    margin-top: 10px;
+
 }
 .footer {
             background-color: #4B0082; /* Color de fondo púrpura oscuro */
@@ -221,7 +230,7 @@ header p {
             transition: color 0.3s;
         }
         .social-icons a:hover {
-            color: #ffcc00; /* Cambia el color al pasar el mouse */
+            color: #ff6600; /* Cambia el color al pasar el mouse */
         }
     </style>
 </head>
@@ -231,24 +240,26 @@ header p {
         <div class="menu">
             <a href="index.html">Inicio</a>
             <a href="afiliacion.html">Afiliación</a>
+            <a href="index.html">Nosotros</a>
+            <a href="index.html">Directorio</a>
             <a href="capacitacion.html">Capacitación</a>
             <a href="contacto.html">Contactos</a>
             <a href="recursos.html">Recursos</a>
         </div>
     </nav>
 
+    <div class="contact-header">
+        <h2>Contactos</h2>
+        <p>"Estamos a tu disposición para resolver cualquier consulta y brindarte el apoyo necesario."</p>
+    </div>
 <div class="container">
     <section class="contact-section">
-        <div class="contact-header">
-            <h2>Contactos</h2>
-        </div>
-        
-        <!-- Contenedor para la imagen y el mapa -->
+                <!-- Contenedor para la imagen y el mapa -->
         <div class="contact-info">
             <img 
     src="EdificioR.jpeg"
     alt="Edificio Rosanía"
-    style="width: 250px; height: 300px;">
+    style="width: 280px; height: 300px;">
  
                 <!-- Mapa con el enlace proporcionado -->
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.797952860521!2d-78.48239390783482!3d-0.1830753749126134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59b7bc903f737%3A0xe63cdfd98ee44a34!2sFEDEPAL%20-%20Federaci%C3%B3n%20de%20establecimientos%20de%20Educaci%C3%B3n%20Particular%20Laica!5e0!3m2!1ses!2sec!4v1732802500956!5m2!1ses!2sec" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -267,7 +278,7 @@ header p {
         </div>
         
         <div class="form-container">
-            <form action="info@fedepal.ec" method="post" enctype="text/plain">
+            <form action="contactos.php" method="POST"">
                 <div class="form-row">
                     <div>
                         <label for="name">Nombre</label>

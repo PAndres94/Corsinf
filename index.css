@@ -41,7 +41,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #ff7f00;
+    background-color: #ff6600;
     color: white;
 }
 
@@ -54,7 +54,7 @@ header {
 
 header img {
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     object-fit: cover;
 }
 
@@ -68,6 +68,7 @@ header .overlay {
 }
 
 header .content {
+    color: #ff6600;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -76,8 +77,10 @@ header .content {
 }
 
 header h1 {
-    font-size: 2.5em;
-    color: #ff7f00;
+    font-size: 5rem;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 header p {
@@ -85,7 +88,7 @@ header p {
 }
 
 header .button {
-    background-color: #ff7f00;
+    background-color: #ff6600;
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -95,7 +98,7 @@ header .button {
 }
 
 header .button:hover {
-    background-color: #cc6600;
+    background-color: #ff6600;
 }
 
 /* Secciones */
@@ -108,24 +111,42 @@ section {
     background-color: #f8f8f8;
 }
 
+.fondo-morado {
+    background-color: #6a0dad; /* Fondo morado */
+    color: #ff6600; /* Texto en color naranja */
+    padding: 5px 10px; /* Espaciado alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    display: block; /* Hace que el elemento ocupe todo el ancho disponible */
+}
+
 #constitucion h2 {
-    color: #ff7f00;
-    font-size: 2em;
+    color: #ff6600;
+    font-size: 4rem;
 }
 
 #constitucion p {
-    color: #333;
-    text-align: justify;
-    max-width: 800px;
-    margin: auto;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 12px;
 }
 
-/* Contenedor y tarjetas */
+/* Sección de Miembros FEDEPAL */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 40px 20px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
+.container h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ff6600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Ajustes de tarjetas y miembros */
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -162,7 +183,7 @@ section {
 }
 
 .card .role {
-    background-color: #ff7f00;
+    background-color: #ff6600;
     color: #fff;
     font-size: 14px;
     font-weight: bold;
@@ -250,8 +271,29 @@ section {
 }
 
 .social-icons a:hover {
-    color: #ffcc00;
+    color: #ff6600;
 }
 
 /* Responsividad */
-@media screen and (max-width: 768
+@media screen and (max-width: 768px) {
+    /* Ajustar el diseño para pantallas más pequeñas */
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+}

@@ -50,11 +50,12 @@ nav a {
     text-align: center;
     padding: 50px 20px;
     background: #4B0082
+    
 }
 
 .hero h1 {
     font-size: 45px;
-    color: var(--color-principal);
+    color:#fff;
 }
 
 /* Contenedor de imagen y texto */
@@ -203,7 +204,7 @@ nav a {
 }
 
 .footer-section a {
-    color: orange; /* Color de los enlaces */
+    color: rgb(255, 255, 255); /* Color de los enlaces */
     text-decoration: none;
 }
 
@@ -217,7 +218,7 @@ nav a {
 }
 
 .social-icon {
-    color: orange; /* Color de los iconos */
+    color: rgb(255, 255, 255); /* Color de los iconos */
     font-size: 1.5rem;
     transition: color 0.3s;
 }
@@ -259,7 +260,7 @@ nav a {
         display: flex;
         justify-content: center; /* Centrar los íconos */
         align-items: center;
-        color: #FF6600; /* El color que deseas para los íconos */
+        color: #ff6600; /* El color que deseas para los íconos */
         font-size: 24px; /* Tamaño de los íconos */
         transition: color 0.3s ease; /* Transición suave para el color */
     }
@@ -268,13 +269,13 @@ nav a {
     .social-icon i {
         font-size: 1.5rem; /* Tamaño de los íconos */
         margin: 0 10px; /* Espaciado entre los íconos */
-        color: #FF6600; /* Color de los íconos */
+        color: #ff6600; /* Color de los íconos */
         transition: color 0.3s ease; /* Efecto al pasar el ratón */
     }
 
     /* Efecto hover para los íconos de redes sociales */
     .social-icon i:hover {
-        color: #e65c00; /* Color al pasar el ratón sobre los íconos */
+        color: #ff6600; /* Color al pasar el ratón sobre los íconos */
     }
 
     /* Estilo para el botón de desplazamiento hacia arriba */
@@ -284,7 +285,7 @@ nav a {
         right: 15px;
         position: fixed; /* El botón se queda fijo en la pantalla */
         z-index: 1000; /* Asegura que esté encima de otros elementos */
-        background-color: #FF6600; /* Color de fondo del botón */
+        background-color: #ff6600; /* Color de fondo del botón */
         color: white; /* Color del texto en el botón */
         padding: 10px; /* Relleno alrededor del texto */
         border-radius: 50%; /* Forma circular del botón */
@@ -294,7 +295,7 @@ nav a {
 
     /* Efecto hover para el botón de desplazamiento */
     .scroll-up:hover {
-        background-color: #e65c00; /* Cambio de color en hover */
+        background-color: #ff6600; /* Cambio de color en hover */
     }
 }
 

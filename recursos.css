@@ -37,7 +37,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #ff7f00;
+    background-color: #ff6600;
     color: white;
 }
 
@@ -52,6 +52,18 @@ nav a.active {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
+}
+header h1{
+    color: #ff6600;
+    font-size: 4rem;
+    margin: 1;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+header p{
+    color: #ff6600;
+    font-size: 1.3rem;
+    margin-top: 10px;
 }
 
 /* Documentos */
@@ -71,7 +83,7 @@ nav a.active {
 }
 
 .documentos button {
-    background-color: #004f9e;
+    background-color: #ff6600;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -82,7 +94,7 @@ nav a.active {
 }
 
 .documentos button:hover {
-    background-color: #ff7f00;
+    background-color: #ff6600;
 }
 
 .documentos .hidden {
@@ -90,7 +102,7 @@ nav a.active {
 }
 
 .documentos a {
-    color: #004f9e;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -140,10 +152,36 @@ nav a.active {
 }
 
 .social-icons a:hover {
-    color: #ffcc00;
+    color: #ff6600;
 }
 
 /* Esta clase ocultará los elementos por defecto */
 .hidden {
     display: none;
+}
+
+/* Estilo uniforme para el botón de desplazamiento hacia arriba */
+.scroll-up {
+    position: fixed;
+    bottom: 20px; /* Lo mantiene al fondo de la página */
+    right: 20px; /* Lo alinea a la derecha */
+    background-color: #ff6600; /* Fondo naranja */
+    color: white; /* Color del texto */
+    font-size: 2rem; /* Tamaño de la fuente */
+    padding: 20px 25px; /* Relleno alrededor del botón */
+    border-radius: 50%; /* Botón redondeado */
+    cursor: pointer;
+    display: none; /* Inicialmente oculto */
+    transition: background-color 0.3s ease; /* Efecto al pasar el mouse */
+    z-index: 1000; /* Asegura que el botón esté sobre otros elementos */
+}
+
+/* Estilo para el botón de desplazamiento hacia arriba cuando se pasa el mouse */
+.scroll-up:hover {
+    background-color: #ff6600; /* Cambio de color en hover */
+}
+
+/* Estilo para mostrar el botón cuando el usuario hace scroll */
+.scroll-up.show {
+    display: block; /* Muestra el botón cuando se tiene suficiente scroll */
 }
