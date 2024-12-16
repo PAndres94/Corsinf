@@ -13,19 +13,24 @@ body {
 }
 
 .convenios-container {
-    width: 80%;
-    margin: 0 auto;
+    background-color: #4B0082; /* Color de fondo púrpura específico */
+    color: #FF6600; /* Cambiado a color de texto naranja */
+    padding: 20px; /* Espacio interno */
+    width: 100%; /* Ocupa todo el ancho */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
 }
 
 h2 {
-    font-size: 36px;
-    color: #333;
+    font-size: 4rem;
+    color: #ffffff;
     margin-bottom: 20px;
+    
 }
 
 p {
+    
     font-size: 18px;
-    color: #666;
+    color: #FF6600;
     margin-bottom: 40px;
 }
 
@@ -91,7 +96,7 @@ p {
     flex-wrap: wrap;
 }
 .footer-section {
-    flex: 1;
+    flex: 4;
     min-width: 150px;
     margin: 10px;
 }
@@ -100,26 +105,28 @@ p {
     font-family: 'Georgia', serif; /* Fuente con estilo */
 }
 .footer-section a {
-    color: white;
+    color: #FF6600;
     text-decoration: none;
     font-family: 'Georgia', serif; /* Fuente con estilo */
 }
 .footer-section p {
     font-family: 'Georgia', serif; /* Fuente con estilo */
 }
-.social-icons {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
+.social-icons-container {
+    display: flex; /* Usar flexbox para los íconos de redes sociales */
+    justify-content: left; /* Centrar los íconos */
+    margin-top: 10px; /* Espacio superior para separar del título */
 }
-.social-icons a {
-    color: white;
-    font-size: 20px; /* Tamaño uniforme para los íconos */
-    text-decoration: none;
-    transition: color 0.3s;
+
+.social-icon {
+    margin: 0 10px; /* Espacio entre íconos */
+    font-size: 24px; /* Tamaño de los íconos */
+    color: #4B0082; /* Color de los íconos */
+    text-decoration: none; /* Eliminar subrayado */
 }
-.social-icons a:hover {
-    color: #ff6600; /* Cambia el color al pasar el mouse */
+
+.social-icon:hover {
+    color: #FF6600; /* Cambiar color al pasar el mouse */
 }
 
 nav {
