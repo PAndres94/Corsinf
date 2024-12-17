@@ -119,10 +119,7 @@ section {
     padding: 5px 10px; /* Espaciado alrededor del texto */
     border-radius: 5px; /* Bordes redondeados */
     display: block; /* Hace que el elemento ocupe todo el ancho disponible */
-    width: 100%; /* Hace que el background ocupe todo el ancho disponible */
-    box-sizing: border-box; /* Incluye el padding dentro del ancho total */
 }
-
 
 
 #constitucion h2 {
