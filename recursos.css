@@ -144,15 +144,27 @@ header p{
     font-family: 'Georgia', serif;
 }
 
+.social-icons-container {
+    display: flex;
+    /* Usar flexbox para los íconos de redes sociales */
+    justify-content: left;
+    /* Centrar los íconos */
+    margin-top: 10px;
+    /* Espacio superior para separar del título */
+}
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
 .social-icons a {
     color: white;
-    font-size: 20px;
+    font-size: 20px; /* Tamaño uniforme para los íconos */
     text-decoration: none;
     transition: color 0.3s;
 }
-
 .social-icons a:hover {
-    color: #ff6600;
+    color: #ff6600; /* Cambia el color al pasar el mouse */
 }
 
 /* Esta clase ocultará los elementos por defecto */

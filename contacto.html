@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Contacto</title>
     <style>
         body {
@@ -11,32 +13,39 @@
             margin: 0;
             padding: 0;
         }
+
         header {
             background-color: #5389f7;
             color: white;
             padding: 20px;
             text-align: center;
         }
+
         .container {
             width: 100%;
             margin: 100px auto;
-            
+
         }
+
         .contact-section {
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
         .contact-header {
             color: #ff6600;
-            background-color: #4B0082; /* Color morado */
+            background-color: #4B0082;
+            /* Color morado */
             padding: 30px;
             text-align: center;
-              }
+        }
+
         .contact-header h2 {
             margin: 0;
             font-size: 2.5rem;
         }
+
         .contact-info {
             display: flex;
             justify-content: center;
@@ -44,196 +53,273 @@
             margin-top: 20px;
             margin-bottom: 20px;
         }
+
         .contact-info img,
         .map-container iframe {
-            width: 200px; /* Tamaño fijo de 200px */
-            height: 200px; /* Tamaño fijo de 200px */
+            width: 200px;
+            /* Tamaño fijo de 200px */
+            height: 200px;
+            /* Tamaño fijo de 200px */
             border-radius: 8px;
         }
+
         .contact-details {
             text-align: center;
             margin-top: 20px;
         }
+
         .contact-details p {
             font-size: 1.1rem;
             color: #555;
         }
+
         .form-container {
-            width: 100%;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .form-row {
-            display: flex;
-            justify-content: space-between;
-            gap: 10px;
-            margin-bottom: 15px;
-        }
-        .form-container input, .form-container textarea {
-            width: 100%;
-            padding: 12px;
-            margin: 8px 0;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-        }
-        .form-container button {
-            background-color: #ff6600;
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            border-radius: 8px;
-            font-size: 1.1rem;
-            cursor: pointer;
-        }
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+
+.form-container button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #4B0082; /* Cambia a un morado cuando se pasa el ratón */
+}
 
         .contact-info-text {
             text-align: center;
-            font-size: 1.2rem;
+            font-size: 2rem;
             color: #333;
-            margin-bottom: 20px;
+            margin-bottom: 50px;
         }
+
         .contact-info-text p {
-            margin: 5px 0;
+            margin: 3px 0;
         }
+
         .phone-number {
             background-color: #ff6600;
+            /* Color naranja por defecto */
             color: white;
             padding: 10px;
             border-radius: 5px;
             display: inline-block;
             margin-top: 10px;
+            transition: background-color 0.3s ease;
+            /* Agrega una transición suave */
         }
+
+        .phone-number:hover {
+            background-color: #4B0082;
+            /* Color morado cuando se pasa el mouse */
+        }
+
         .more-info {
             text-align: center;
             font-size: 1.2rem;
             color: #333;
             margin-top: 20px;
         }
+
         .phone-number a {
-    color: #ffffff; /* Color verde de WhatsApp */
-    text-decoration: none; /* Eliminar subrayado */
-}
+            color: #ffffff;
+            /* Color verde de WhatsApp */
+            text-decoration: none;
+            /* Eliminar subrayado */
+        }
 
-.phone-number a:hover {
-    text-decoration: none; /* Asegurarse de que no se subraye al pasar el ratón */
-}
-nav {
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-nav img {
-    height: 50px;
-}
-nav .menu {
-    display: flex;
-    gap: 20px;
-}
-nav a {
-    color: #004f9e;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: bold;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-nav a:hover {
-    background-color: #ff6600;
-    color: white;
-}
+        .phone-number a:hover {
+            text-decoration: none;
+            /* Asegurarse de que no se subraye al pasar el ratón */
+        }
 
-/* Estilos del encabezado */
-header {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-header img {
-    width: 100%;
-    height: 50vh;
-    object-fit: cover;
-}
-header .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-header .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-}
-header h1 {
-    font-size: 2.5em;
-    color: #ff6600;
-}
-header p {
-    font-size: 1.2em;
-}
-.contact-header h2{
+        nav {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav img {
+            height: 50px;
+        }
+
+        nav .menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #004f9e;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ff6600;
+            color: white;
+        }
+
+        /* Estilos del encabezado */
+        header {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        header img {
+            width: 100%;
+            height: 50vh;
+            object-fit: cover;
+        }
+
+        header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        header .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #ff6600;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        .contact-header h2 {
             font-size: 4rem;
             margin: 0;
             font-weight: bold;
             text-transform: uppercase;
-}
-.contact-header p{
-    font-size: 1.2rem;
-    margin-top: 10px;
+        }
 
-}
-.footer {
-            background-color: #4B0082; /* Color de fondo púrpura oscuro */
+        .contact-header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            /* Centra los elementos */
+            align-items: center;
+            /* Alinea verticalmente */
+            gap: 15px;
+            /* Espaciado entre los elementos */
+        }
+
+        .contact-info img,
+        .map-container iframe {
+            width: 99%;
+            /* Establece el tamaño de ambos elementos */
+            height: 500px;
+            /* Ajusta la altura proporcionalmente */
+            border-radius: 8px;
+        }
+
+        /* Asegúrate de que el mapa también tenga un tamaño adecuado */
+        .map-container iframe {
+            max-height: 100%;
+            /* Altura máxima */
+        }
+
+        .footer {
+            background-color: #4B0082;
+            /* Color de fondo púrpura oscuro */
             color: white;
             padding: 20px;
             margin-top: auto;
         }
+
         .footer-container {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
         }
+
         .footer-section {
             flex: 1;
             min-width: 150px;
             margin: 10px;
         }
+
         .footer-section h3 {
             margin-top: 0;
-            font-family: 'Georgia', serif; /* Fuente con estilo */
+            font-family: 'Georgia', serif;
+            /* Fuente con estilo */
         }
+
         .footer-section a {
             color: white;
             text-decoration: none;
-            font-family: 'Georgia', serif; /* Fuente con estilo */
+            font-family: 'Georgia', serif;
+            /* Fuente con estilo */
         }
+
         .footer-section p {
-            font-family: 'Georgia', serif; /* Fuente con estilo */
+            font-family: 'Georgia', serif;
+            /* Fuente con estilo */
         }
+
         .social-icons {
             display: flex;
             gap: 15px;
             margin-top: 20px;
         }
+
         .social-icons a {
             color: white;
-            font-size: 20px; /* Tamaño uniforme para los íconos */
+            font-size: 20px;
+            /* Tamaño uniforme para los íconos */
             text-decoration: none;
             transition: color 0.3s;
         }
+
         .social-icons a:hover {
-            color: #ff6600; /* Cambia el color al pasar el mouse */
+            color: #ff6600;
+            /* Cambia el color al pasar el mouse */
         }
     </style>
 </head>
+
 <body>
     <nav>
         <img src="https://www.fedepal.ec/wp-content/uploads/2020/02/cropped-logosmall.png" alt="Logo FEDEPAL">
@@ -243,7 +329,7 @@ header p {
             <a href="index.html">Nosotros</a>
             <a href="index.html">Directorio</a>
             <a href="capacitacion.html">Capacitación</a>
-            <a href="contacto.html">Contactos</a>
+            <a href="contacto.php">Contactos</a>
             <a href="recursos.html">Recursos</a>
         </div>
     </nav>
@@ -252,50 +338,57 @@ header p {
         <h2>Contactos</h2>
         <p>"Estamos a tu disposición para resolver cualquier consulta y brindarte el apoyo necesario."</p>
     </div>
-<div class="container">
-    <section class="contact-section">
-                <!-- Contenedor para la imagen y el mapa -->
-        <div class="contact-info">
-            <img 
-    src="EdificioR.jpeg"
-    alt="Edificio Rosanía"
-    style="width: 280px; height: 300px;">
- 
-                <!-- Mapa con el enlace proporcionado -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.797952860521!2d-78.48239390783482!3d-0.1830753749126134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59b7bc903f737%3A0xe63cdfd98ee44a34!2sFEDEPAL%20-%20Federaci%C3%B3n%20de%20establecimientos%20de%20Educaci%C3%B3n%20Particular%20Laica!5e0!3m2!1ses!2sec!4v1732802500956!5m2!1ses!2sec" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="container">
+        <section class="contact-section">
+            <!-- Contenedor para la imagen y el mapa -->
+            <div class="contact-info">
+                <div class="image-container">
+                    <img src="Images/EdificioR.jpeg" alt="Edificio Rosanía" class="contact-image">
+                </div>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.797952860521!2d-78.48239390783482!3d-0.1830753749126134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59b7bc903f737%3A0xe63cdfd98ee44a34!2sFEDEPAL%20-%20Federaci%C3%B3n%20de%20establecimientos%20de%20Educaci%C3%B3n%20Particular%20Laica!5e0!3m2!1ses!2sec!4v1732802500956!5m2!1ses!2sec"
+                        width="100%" height="450" style="border:none;" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
             </div>
-        </div>
-        
-        <!-- Información de contacto debajo de la imagen y mapa -->
-        <div class="contact-info-text">
-            <p>República del Salvador 525 e Irlanda</p>
-            <p>Edificio Rosanía</p>
-            <p>Piso Bajo junto al Hotel Dann Carlton</p>
-            <div class="phone-number">
-                <a href="https://wa.me/59399247290" target="_blank">+593 99247290</a>
+
+
+            <!-- Información de contacto debajo de la imagen y mapa -->
+            <div class="contact-info-text">
+                <p>República del Salvador 525 e Irlanda</p>
+                <p>Edificio Rosanía</p>
+                <p>Piso Bajo junto al Hotel Dann Carlton</p>
+                <div class="phone-number">
+                    <a href="https://wa.me/+59399247290" target="_blank">+593 99247290</a>
+                </div>
+                <p class="more-info">¿Deseas más información?</p>
             </div>
-            <p class="more-info">¿Deseas más información?</p>
-        </div>
-        
-        <div class="form-container">
-            <form action="tamayoandres211294@gmail.com" method="POST">
-                <label for="name">Nombre</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="subject">Asunto</label>
-                <input type="text" id="subject" name="subject" required>
-                
-                <label for="message">Mensaje</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-    </section>
-</div>
+
+            <div class="form-container">
+                <form action="enviar.php" method="POST">
+                    <!-- Campo para el Nombre -->
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" required placeholder="Escribe tu nombre">
+            
+                    <!-- Campo para el Email -->
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Escribe tu email">
+            
+                    <!-- Campo para el Asunto -->
+                    <label for="subject">Asunto</label>
+                    <input type="text" id="subject" name="subject" required placeholder="Escribe el asunto">
+            
+                    <!-- Campo para el Mensaje -->
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Escribe tu mensaje"></textarea>
+            
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </div>
 
 
 </body>
@@ -323,17 +416,20 @@ header p {
         <div class="footer-section social-icons">
             <h3>Redes Sociales</h3> <!-- Título para la sección de redes sociales -->
             <div class="social-icons-container"> <!-- Contenedor para los íconos -->
-                <a href="https://www.facebook.com/FEDEPALECUADOR/?locale=es_LA" class="social-icon" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/FEDEPALECUADOR/?locale=es_LA" class="social-icon" target="_blank"
+                    rel="noopener noreferrer">
                     <i class="fab fa-facebook"></i>
                 </a>
                 <a href="https://x.com/fedepal?lang=es" class="social-icon" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-x"></i>
                 </a>
-                <a href="https://www.instagram.com/fedepal_uio/?hl=es-la" class="social-icon" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/fedepal_uio/?hl=es-la" class="social-icon" target="_blank"
+                    rel="noopener noreferrer">
                     <i class="fab fa-instagram"></i>
                 </a>
             </div>
         </div>
     </div>
 </footer>
+
 </html>
