@@ -14,6 +14,7 @@ body {
 /* Estilos de navegación */
 nav {
     background-color: white;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,7 +42,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #ff6600;
+    background-color: #ff8000;
     color: white;
 }
 
@@ -54,7 +55,7 @@ header {
 
 header img {
     width: 100%;
-    height: 40vh;
+    height: 65vh;
     object-fit: cover;
 }
 
@@ -68,37 +69,38 @@ header .overlay {
 }
 
 header .content {
-    color: #ff6600;
+    color: #ffffff;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
 }
 
 header h1 {
-    font-size: 5rem;
+    color: #ff8000;
+    font-size: 4rem;
     margin: 0;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 header p {
-    font-size: 1.2em;
+    font-size: 1.7em;
 }
 
 header .button {
-    background-color: #ff6600;
+    background-color: #ff8000;
     color: white;
+    font-size: 1.4rem;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 25px 25px;
     border-radius: 5px;
     font-weight: bold;
-    transition: background-color 0.3s ease;
 }
 
-header .button:hover {
-    background-color: #ff6600;
+.content p {
+    margin-bottom: 50px; /* Esto agrega espacio debajo del párrafo */
 }
 
 /* Secciones */
@@ -112,21 +114,25 @@ section {
 }
 
 .fondo-morado {
-    background-color: #6a0dad; /* Fondo morado */
-    color: #ff6600; /* Texto en color naranja */
+    background-color: rgba(52, 83, 139, 1); 
+    color: #ff8000; /* Texto en color naranja */
     padding: 5px 10px; /* Espaciado alrededor del texto */
     border-radius: 5px; /* Bordes redondeados */
     display: block; /* Hace que el elemento ocupe todo el ancho disponible */
+    width: 100%; /* Hace que el background ocupe todo el ancho disponible */
+    box-sizing: border-box; /* Incluye el padding dentro del ancho total */
 }
 
+
+
 #constitucion h2 {
-    color: #ff6600;
+    color: #ff8000;
     font-size: 4rem;
 }
 
 #constitucion p {
-    font-size: 16px;
-    color: #000000;
+    font-size: 22px;
+    color: rgba(52, 83, 139, 1);
     margin-bottom: 12px;
 }
 
@@ -141,7 +147,7 @@ section {
 .container h2 {
     font-size: 4rem;
     font-weight: bold;
-    color: #ff6600;
+    color: #ff8000;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -173,7 +179,7 @@ section {
 .card h3 {
     margin: 10px 0 5px;
     font-size: 18px;
-    color: #333;
+    color: rgba(52, 83, 139, 1);
 }
 
 .card p {
@@ -183,7 +189,7 @@ section {
 }
 
 .card .role {
-    background-color: #ff6600;
+    background-color: #ff8000;
     color: #fff;
     font-size: 14px;
     font-weight: bold;
@@ -208,24 +214,24 @@ section {
 
 .stat-box i {
     font-size: 50px;
-    color: #4B0082;
+    color: #34538b;
 }
 
 .stat-number {
     font-size: 24px;
     font-weight: bold;
-    color: #4B0082;
+    color: #ff8000;
 }
 
 .stat-text {
     font-size: 16px;
-    color: #333333;
+    color: #34538b;
 }
 
 /* Footer */
 .footer {
-    background-color: #4B0082;
-    color: white;
+    background-color: #351c75;
+    color: #f57b05;
     padding: 20px;
     margin-top: auto;
 }
@@ -248,7 +254,7 @@ section {
 }
 
 .footer-section a {
-    color: white;
+    color: #ff9900;
     text-decoration: none;
     font-family: 'Georgia', serif;
 }
@@ -257,22 +263,25 @@ section {
     font-family: 'Georgia', serif;
 }
 
-.social-icons {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-}
+.footer-section {
+    text-align: center; /* Centra el texto horizontalmente */
+  }
+  
+  /* Contenedor de íconos */
+  .social-icons-container {
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Alinea verticalmente */
+    gap: 20px; /* Espacio entre los íconos */
+    margin-top: 10px; /* Espacio entre el título y los íconos */
+  }
+  
+  /* Estilo de los íconos */
+  .social-icon {
+    font-size: 32px; /* Tamaño de los íconos */
+    color: #333; /* Color inicial */
+  }
 
-.social-icons a {
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.social-icons a:hover {
-    color: #ff6600;
-}
 
 /* Responsividad */
 @media screen and (max-width: 768px) {
