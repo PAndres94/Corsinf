@@ -43,7 +43,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #0a08a7;
+    color: #30327d;
 }
 
 /* Sección Hero */
@@ -178,7 +178,7 @@ nav a {
     /* Lo alinea a la derecha */
     background-color: #da8f27;
     /* Fondo amarillo */
-    color: #3c0061;
+    color: #30327d;
     /* Color de texto */
     font-size: 1.5rem;
     padding: 10px 15px;
@@ -237,7 +237,7 @@ nav a {
 }
 
 h1 {
-    color: #045a94;
+    color: #30327d;
     /* Azul */
     font-size: 50px;
 }
@@ -260,7 +260,7 @@ hr.separator {
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
-    color: #045a94;
+    color: #30327d;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
