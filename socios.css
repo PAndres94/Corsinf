@@ -1,11 +1,11 @@
 /* Variables CSS */
 :root {
-    --color-principal: #ff6600;
+    --color-principal: #da8f27;
     --color-fondo: #fff;
     --color-sombra: rgba(0, 0, 0, 0.1);
     --fuente-familia: Arial, sans-serif;
     --color-borde: #ddd;
-    --color-footer-bg: #ff6600;
+    --color-footer-bg: #da8f27;
     /* Color de fondo para el pie de página */
 }
 
@@ -50,12 +50,12 @@ nav a {
 .hero {
     text-align: center;
     padding: 50px 20px;
-    background: #4B0082
+    background: #30327d
 }
 
 .hero h1 {
     font-size: 45px;
-    color: #ff6600;
+    color: #da8f27;
 }
 
 /* Contenedor de imagen y texto */
@@ -109,7 +109,7 @@ nav a {
 .filter-box select {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ff6600;
+    border: 1px solid #da8f27;
     border-radius: 4px;
     max-width: 1300px;
 }
@@ -176,7 +176,7 @@ nav a {
     /* Lo mantiene al fondo de la página */
     right: 20px;
     /* Lo alinea a la derecha */
-    background-color: #ff6600;
+    background-color: #da8f27;
     /* Fondo amarillo */
     color: #3c0061;
     /* Color de texto */
@@ -190,7 +190,7 @@ nav a {
 }
 
 .scroll-up:hover {
-    background-color: #ff6600;
+    background-color: #da8f27;
     /* Cambiar fondo al pasar el mouse */
 }
 
@@ -215,7 +215,7 @@ nav a {
         /* El botón se queda fijo en la pantalla */
         z-index: 1000;
         /* Asegura que esté encima de otros elementos */
-        background-color: #ff6600;
+        background-color: #da8f27;
         /* Color de fondo del botón */
         color: white;
         /* Color del texto en el botón */
@@ -231,7 +231,7 @@ nav a {
 
     /* Efecto hover para el botón de desplazamiento */
     .scroll-up:hover {
-        background-color: #ff6600;
+        background-color: #da8f27;
         /* Cambio de color en hover */
     }
 }
@@ -333,7 +333,7 @@ p {
 }
 
 .footer {
-    background-color: #4B0082;
+    background-color: #30327d;
     /* Color de fondo púrpura oscuro */
     color: white;
     padding: 20px;
@@ -359,7 +359,7 @@ p {
 }
 
 .footer-section a {
-    color: #FF6600;
+    color: #da8f27;
     text-decoration: none;
     font-family: 'Georgia', serif;
     /* Fuente con estilo */
@@ -384,14 +384,14 @@ p {
     /* Espacio entre íconos */
     font-size: 24px;
     /* Tamaño de los íconos */
-    color: #4B0082;
+    color: #30327d;
     /* Color de los íconos */
     text-decoration: none;
     /* Eliminar subrayado */
 }
 
 .social-icon:hover {
-    color: #FF6600;
+    color: #da8f27;
     /* Cambiar color al pasar el mouse */
 }
 

@@ -23,7 +23,7 @@ nav .menu {
     gap: 20px;
 }
 nav a {
-    color: #004f9e;
+    color: #30327d;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: bold;
@@ -32,14 +32,14 @@ nav a {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 nav a:hover {
-    background-color: #ff6600;
+    background-color: #da8f27;
     color: white;
 }
 
 /* Encabezado */
 .header  {
-    background-color: #4B0082;
-    color: #ff6600;
+    background-color: #30327d;
+    color: #da8f27;
     text-align: center;
     padding: 1rem 0;
 }
@@ -100,13 +100,13 @@ header p {
 
 /* Si deseas aplicar un estilo adicional cuando el usuario pase el mouse sobre el enlace */
 .button-container a:hover {
-    color: #4B0082;  /* Mantener el color blanco cuando se pase el mouse */
+    color: #30327d;  /* Mantener el color blanco cuando se pase el mouse */
 }
 .button {
     display: inline-block;
     padding: 10px 20px;
     color: #ffffff; /* Cambia el color del texto aquí */
-    background-color: #ff6600;
+    background-color: #da8f27;
     border: none;
     border-radius: 5px;
     text-align: center;
@@ -117,13 +117,13 @@ header p {
 }
 
 .button:hover {
-    background-color: #ff6600;
+    background-color: #da8f27;
     color: aliceblue;
 }
 
 /* Pie de página */
 .footer {
-    background-color: #4B0082; /* Color de fondo púrpura oscuro */
+    background-color: #30327d; /* Color de fondo púrpura oscuro */
     color: white;
     padding: 20px;
     margin-top: auto;
@@ -162,5 +162,5 @@ header p {
     transition: color 0.3s;
 }
 .social-icons a:hover {
-    color: #ff6600; /* Cambia el color al pasar el mouse */
+    color: #da8f27; /* Cambia el color al pasar el mouse */
 }

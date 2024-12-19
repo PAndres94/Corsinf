@@ -32,7 +32,7 @@ nav .menu {
 }
 
 nav a {
-    color: #004f9e;
+    color: #30327d;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: bold;
@@ -42,7 +42,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #ff8000;
+    background-color: #da8f27;
     color: white;
 }
 
@@ -51,6 +51,18 @@ header {
     position: relative;
     text-align: center;
     color: white;
+}
+
+.header h1 {
+    font-size: 4rem;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 1.7rem;
+    margin-top: 10px;
 }
 
 header img {
@@ -78,19 +90,16 @@ header .content {
 }
 
 header h1 {
-    color: #ff8000;
+    color: #da8f27;
     font-size: 4rem;
     margin: 0;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-header p {
-    font-size: 1.7em;
-}
 
 header .button {
-    background-color: #ff8000;
+    background-color: #da8f27;
     color: white;
     font-size: 1.4rem;
     text-decoration: none;
@@ -114,8 +123,8 @@ section {
 }
 
 .fondo-morado {
-    background-color: rgba(52, 83, 139, 1); 
-    color: #ff8000; /* Texto en color naranja */
+    background-color: rgb(48, 50, 125); 
+    color: #da8f27; /* Texto en color naranja */
     padding: 5px 10px; /* Espaciado alrededor del texto */
     border-radius: 5px; /* Bordes redondeados */
     display: block; /* Hace que el elemento ocupe todo el ancho disponible */
@@ -123,13 +132,13 @@ section {
 
 
 #constitucion h2 {
-    color: #ff8000;
+    color: #da8f27;
     font-size: 4rem;
 }
 
 #constitucion p {
     font-size: 22px;
-    color: rgba(52, 83, 139, 1);
+    color: rgb(48, 50, 125);
     margin-bottom: 12px;
 }
 
@@ -144,7 +153,7 @@ section {
 .container h2 {
     font-size: 4rem;
     font-weight: bold;
-    color: #ff8000;
+    color: #da8f27;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -176,7 +185,7 @@ section {
 .card h3 {
     margin: 10px 0 5px;
     font-size: 18px;
-    color: rgba(52, 83, 139, 1);
+    color: rgb(48, 50, 125);
 }
 
 .card p {
@@ -186,7 +195,7 @@ section {
 }
 
 .card .role {
-    background-color: #ff8000;
+    background-color: #da8f27;
     color: #fff;
     font-size: 14px;
     font-weight: bold;
@@ -211,24 +220,24 @@ section {
 
 .stat-box i {
     font-size: 50px;
-    color: #34538b;
+    color: #30327d;
 }
 
 .stat-number {
     font-size: 24px;
     font-weight: bold;
-    color: #ff8000;
+    color: #da8f27;
 }
 
 .stat-text {
     font-size: 16px;
-    color: #34538b;
+    color: #30327d;
 }
 
 /* Footer */
 .footer {
-    background-color: #351c75;
-    color: #f57b05;
+    background-color: #30327d;
+    color: #da8f27;
     padding: 20px;
     margin-top: auto;
 }
@@ -251,7 +260,7 @@ section {
 }
 
 .footer-section a {
-    color: #ff9900;
+    color: #da8f27;
     text-decoration: none;
     font-family: 'Georgia', serif;
 }

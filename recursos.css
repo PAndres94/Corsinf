@@ -37,7 +37,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #ff6600;
+    background-color: #da8f27;
     color: white;
 }
 
@@ -48,20 +48,20 @@ nav a.active {
 
 /* Encabezado */
 .header {
-    background-color: #4B0082;
+    background-color: #30327d;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
 }
 header h1{
-    color: #ff6600;
+    color: #da8f27;
     font-size: 4rem;
     margin: 1;
     font-weight: bold;
     text-transform: uppercase;
 }
 header p{
-    color: #ff6600;
+    color: #da8f27;
     font-size: 1.3rem;
     margin-top: 10px;
 }
@@ -83,7 +83,7 @@ header p{
 }
 
 .documentos button {
-    background-color: #ff6600;
+    background-color: #da8f27;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -94,7 +94,7 @@ header p{
 }
 
 .documentos button:hover {
-    background-color: #ff6600;
+    background-color: #da8f27;
 }
 
 .documentos .hidden {
@@ -112,7 +112,7 @@ header p{
 
 /* Pie de página */
 .footer {
-    background-color: #4B0082;
+    background-color: #30327d;
     color: white;
     padding: 20px;
     margin-top: auto;
@@ -164,7 +164,7 @@ header p{
     transition: color 0.3s;
 }
 .social-icons a:hover {
-    color: #ff6600; /* Cambia el color al pasar el mouse */
+    color: #da8f27; /* Cambia el color al pasar el mouse */
 }
 
 /* Esta clase ocultará los elementos por defecto */
@@ -177,7 +177,7 @@ header p{
     position: fixed;
     bottom: 20px; /* Lo mantiene al fondo de la página */
     right: 20px; /* Lo alinea a la derecha */
-    background-color: #ff6600; /* Fondo naranja */
+    background-color: #da8f27; /* Fondo naranja */
     color: white; /* Color del texto */
     font-size: 2rem; /* Tamaño de la fuente */
     padding: 20px 25px; /* Relleno alrededor del botón */
@@ -190,7 +190,7 @@ header p{
 
 /* Estilo para el botón de desplazamiento hacia arriba cuando se pasa el mouse */
 .scroll-up:hover {
-    background-color: #ff6600; /* Cambio de color en hover */
+    background-color: #da8f27; /* Cambio de color en hover */
 }
 
 /* Estilo para mostrar el botón cuando el usuario hace scroll */
